@@ -1,0 +1,7 @@
+<div>
+
+
+  <input class="login__text form-control" type="text" #box_mail (keyup)="get_email_in(box_mail.value)" placeholder="Phone number, username, or email" [(ngModel)]="email">
+  <input class="login__text form-control" type="password" #box_psw (keyup)="get_password_in(box_psw.value)" placeholder="Password" [(ngModel)]="password">
+  <button class="login__button" (click)="login()">Log In</button>
+</div>

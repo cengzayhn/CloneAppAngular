@@ -1,0 +1,30 @@
+.storybar__container{
+  height: 120px;
+  width: 615px;
+  background-color: white;
+  border: 1px solid #DBDBDB;
+  margin-top: 25px;
+  display: flex;
+  overflow-x: scroll;
+}
+.storybar__container::-webkit-scrollbar{
+  display: none;
+}
+
+.storybar_story{
+  width: 55px;
+  height: 55px;
+}
+.story{
+  margin: 25px 15px;
+}
+.storybar_username{
+  padding-left: 5px;
+  font-size: 12px;
+  max-width: 50px;
+  overflow-x: hidden;
+}
+.storybar__upload{
+  padding-bottom: 15px;
+  border-right: 1px solid #DBDBDB;
+}

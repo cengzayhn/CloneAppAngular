@@ -1,0 +1,7 @@
+<div>
+  <input class="login__text form-control" type="text" #email_box (keyup)="get_email(email_box.value)"  placeholder="Mobile number or Email" [(ngModel)]="email" >
+  <input class="login__text" type="text" #name_box (keyup)="get_name(name_box.value)" placeholder="Full Name"/>
+  <input class="login__text" type="text" #username_box (keyup)="get_username(username_box.value)" placeholder="Username"/>
+  <input class="login__text form-control" type="password" #password_box (keyup)="get_password(password_box.value)" placeholder="Password"  [(ngModel)]="password">
+  <button class="login__button" (click)="register()">Sign Up</button>
+</div>
