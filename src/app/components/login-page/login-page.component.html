@@ -1,0 +1,63 @@
+<div class="container">
+  <mat-grid-list cols="4">
+    <mat-grid-tile rowspan="2"></mat-grid-tile>
+    <mat-grid-tile rowspan="2" style="background: white" colspan="2">
+
+    <div class="loginpage__main">
+      <div class="loginpage__img">
+        <img src="../../../assets/images/screenshot-instagiris.png" width="454px">
+      </div>
+      <div>
+        <div class="loginpage_rightcomponent">
+          <img class="loginpage__logo" src="../../../assets/images/Instagram_logo.png">
+          <div class="loginpage__signing">
+
+            <!--{{this.state.isLogin ? <app-signin></app-signin> : <app-signup></app-signup>}}-->
+            <div *ngIf="this.state.isLogin">
+              <app-signin></app-signin>
+            </div>
+            <div *ngIf="!this.state.isLogin">
+              <app-signup></app-signup>
+            </div>
+
+            <div class="login__ordiv">
+              <div class="login__divider"></div>
+              <div class="login__or">OR</div>
+              <div class="login__divider"></div>
+            </div>
+
+            <div class="login__fb">
+              <img src="../../../assets/images/fb.png" width="15px" style="margin-right: 5px"/> Log in with Facebook</div>
+            <div class="login__frgt">Forgot password ?</div>
+          </div>
+        </div>
+
+        <div class="loginpage__signupoption">
+          <div *ngIf="this.state.isLogin">
+            <div class="loginpage__signin">Don't have an account? <span (click)="this.changeLogin()" style="font-weight: bold;color: #0395F6">Sign up</span></div>
+          </div>
+          <div *ngIf="!this.state.isLogin">
+            <div class="loginpage__signup">Have an account? <span (click)="this.changeLogin()" style="font-weight: bold;color: #0395F6">Sign in</span></div>
+          </div>
+
+        </div>
+
+        <div  class="loginpage__downloadsection">
+          <div>
+            Get the app.
+          </div>
+          <div class="loginpage_option">
+            <img class="loginpage__dwimg" src="../../../assets/images/screenshot-playstore.png" width="156px">
+            <img class="loginpage__dwimg" src="../../../assets/images/screenshot-microsoftlogo.png" width="136px">
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="2"></mat-grid-tile>
+  </mat-grid-list>
+</div>
